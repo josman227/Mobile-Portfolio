@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+* {
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   padding: 24px;
-  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f9;
+  background-color: #fff;
   box-sizing: border-box;
   max-width: 375px;
 }
@@ -16,9 +21,12 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url(img/backg.png);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   background-position: center;
-  margin-bottom: 250px;
+  width: 107%;
+  max-width: 356px;
+  height: 551px;
 }
 
 .bio {
@@ -36,7 +44,6 @@ body {
 .logo {
   width: 76px;
   height: 20px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -53,13 +60,15 @@ body {
 }
 
 .bio-header {
-  font-size: 49px;
-  font-weight: 800;
-  line-height: 60px;
-  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
   letter-spacing: 0.37px;
-  bottom: 20%;
-  color: #091e42;
+  color: #172b4d;
+  width: 327px;
+  height: 150px;
+  margin-top: 82px;
 }
 
 .bio-text {
@@ -67,14 +76,17 @@ body {
   font-weight: 400;
   line-height: 24px;
   max-width: 80vw;
-  top: 30%;
+  margin-top: -20px;
   color: #344563;
 }
 
 .connect {
   text-transform: uppercase;
-  text-decoration: none;
   color: #6070ff;
+}
+
+.connect-text {
+  margin-top: -11px;
 }
 
 .connect-icons {
@@ -82,14 +94,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-content: flex-start;
-  padding-left: 1px;
-  padding-top: 1px;
-  margin: 1px;
-  list-style: none;
+  margin-left: -58px;
+  margin-top: -5px;
 }
 
 .connect-icons i {
-  margin: 0;
+  margin-left: 19px;
   font-size: 21px;
   color: #505f79;
   height: 19.96px;
