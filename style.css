@@ -7,12 +7,10 @@
 }
 
 body {
-  margin: 0;
   padding: 24px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  max-width: 375px;
 }
 
 .bio-section {
@@ -23,7 +21,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  width: 107%;
+  width: 100%;
   max-width: 356px;
   height: 551px;
   background-color: #fff;
@@ -112,13 +110,6 @@ body {
   cursor: pointer;
 }
 
-.works-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 114px 24px;
-}
-
 .cards {
   display: grid;
   gap: 88px;
@@ -135,16 +126,8 @@ body {
   align-items: center;
   padding: 16px;
   gap: 12px;
-}
-
-.card-items {
-  display: grid;
-  place-items: center;
-  padding: 12px;
-  gap: 12px;
   position: relative;
-  bottom: 3%;
-  margin-left: -15px;
+  left: -15px;
 }
 
 .card-img {
@@ -155,7 +138,14 @@ body {
   margin-left: 14px;
 }
 
-.card-name {
+.connect-2 {
+  color: #7f8cff;
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.card-name h2 {
   width: 295px;
   height: 36px;
   font-style: normal;
@@ -176,30 +166,30 @@ body {
   position: relative;
   bottom: 39px;
   padding-left: 5px;
-  left: 37px;
+  left: -26px;
 }
 
 .card-prop a {
   position: relative;
-  right: 64px;
+  right: 8px;
   height: 16px;
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
   color: #7a869a;
-  margin-left: 9px;
+  margin-left: 5px;
   text-decoration: none;
 }
 
 .card-props li:first-child a {
-  color: #344563;
+  font-weight: 600;
   text-transform: uppercase;
+  color: #2e4662;
 }
 
 .card-text {
   position: relative;
   bottom: 73px;
-  left: 3px;
   width: 295px;
   height: 76px;
   font-weight: 400;
@@ -238,22 +228,26 @@ body {
   cursor: pointer;
   position: relative;
   bottom: 114px;
-  height: 53px;
+  height: 49px;
   right: 28%;
 }
 
 .about-section {
   position: relative;
   left: 0.2px;
-  outline: 1.3px solid #e5e5e5;
-  outline-offset: 19px;
   border-top-right-radius: 98px;
+  margin-top: 90px;
+  border-top: 1px solid #e5e5e5;
+
 }
 
 .about-me {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
+  /* transform: translate(10px, 193px); */
+}
+
+.about-items {
+  background-color: white;
+
 }
 
 .about-heading {
@@ -381,4 +375,8 @@ button:active {
 button:disabled {
   color: #5a6c83;
   border: none;
+}
+
+.master-setion {
+ 
 }
