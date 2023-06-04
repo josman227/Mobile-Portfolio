@@ -238,16 +238,10 @@ body {
   border-top-right-radius: 98px;
   margin-top: 90px;
   border-top: 1px solid #e5e5e5;
-
-}
-
-.about-me {
-  /* transform: translate(10px, 193px); */
 }
 
 .about-items {
   background-color: white;
-
 }
 
 .about-heading {
@@ -375,8 +369,4 @@ button:active {
 button:disabled {
   color: #5a6c83;
   border: none;
-}
-
-.master-setion {
- 
 }
