@@ -159,7 +159,7 @@ body {
   padding-bottom: 12px;
 }
 
-.card-name h2 {
+.card h2 {
   width: 295px;
   height: 36px;
   font-style: normal;
@@ -183,7 +183,7 @@ body {
   left: -26px;
 }
 
-.card-prop a {
+.card-prop {
   position: relative;
   right: 8px;
   height: 16px;
@@ -249,9 +249,10 @@ body {
 .about-section {
   position: relative;
   left: -30.8px;
+  top: 31px;
   border-top-right-radius: 98px;
-  margin-top: 185px;
-  height: 984px;
+  margin-top: 198px;
+  height: 852px;
   width: 373px;
 }
 
@@ -294,6 +295,7 @@ body {
   align-items: center;
   position: relative;
   right: 34px;
+  height: 12px;
 }
 
 .languages h2,
