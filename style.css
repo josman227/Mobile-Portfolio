@@ -407,3 +407,14 @@ section {
 .content {
   margin-left: 24px;
 }
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  margin-top: 88px;
+  width: 375px;
+  height: 779;
+  background-image: url(img/backg.png);
+  background-color: #6070ff;
+  
+}
