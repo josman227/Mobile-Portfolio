@@ -415,118 +415,22 @@ section {
 .contact-me {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 88px;
   width: 375px;
-  height: 779;
-  background-image: url(img/backg.png);
+  height: 779px;
+  background-image: url("./img/contact\ form\ shapes-mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
   background-color: #6070ff;
   position: relative;
   align-items: center;
-  right: 33px;
-  border-top-left-radius: 98px;
 }
 
-/* Desktop Version */
-
-@media screen and (min-width: 768px) {
-  body {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    background-color: #e5e5e5;
-  }
-
-  .navigation {
-    background-color: #fff;
-    width: 768px;
-    height: 50px;
-    position: relative;
-    left: -33px;
-    top: -31px;
-  }
-
-  .bio-section {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    background-image: url(img/desk-bg.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    border-bottom-left-radius: 11%;
-    width: 767px;
-    height: 916px;
-    position: relative;
-    left: -31px;
-    top: -67px;
-  }
-
-  .bio-header {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60px;
-    text-align: left;
-    letter-spacing: 0.37px;
-    color: #172b4d;
-    width: 466px;
-    height: 122px;
-    margin-top: 82px;
-  }
-
-  .bio-text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    max-width: 80vw;
-    margin-top: -20px;
-    color: #344563;
-  }
-
-  .connect-icons {
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    margin-left: -58px;
-    margin-top: -5px;
-  }
-
-  .connect-icons i {
-    margin-left: 19px;
-    font-size: 21px;
-    color: #505f79;
-    height: 19.96px;
-    width: 19.99px;
-  }
-
-  .card {
-    width: 311px;
-    height: 552px;
-    border: 2px solid lightgray;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    gap: 12px;
-    position: relative;
-    left: -15px;
-    background-color: #fff;
-  }
-
-  .card-img {
-    width: 311px;
-    height: 220px;
-    border-radius: 8px;
-    margin-top: 11px;
-    margin-left: 14px;
-  }
-
-  .connect-2 {
-    color: #7f8cff;
-    font-size: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+.contact-title {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
 }
