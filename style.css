@@ -415,11 +415,28 @@ section {
 .contact-me {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 88px;
   width: 375px;
-  height: 779;
-  background-image: url(img/backg.png);
+  height: 779px;
+  background-image: url("./img/contact\ form\ shapes-mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
   background-color: #6070ff;
   position: relative;
   align-items: center;
+  border-top-left-radius: 98px;
+  right: 30px;
+}
+
+.contact-description {
+  color: #EBEBFF;
+}
+
+.contact-title {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
 }
