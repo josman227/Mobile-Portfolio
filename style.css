@@ -420,4 +420,6 @@ section {
   height: 779;
   background-image: url(img/backg.png);
   background-color: #6070ff;
+  position: relative;
+  align-items: center;
 }
