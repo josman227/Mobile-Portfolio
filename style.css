@@ -259,10 +259,10 @@ body {
 .about-section {
   position: relative;
   left: -30.8px;
-  top: 31px;
+  top: 197px;
   border-top-right-radius: 98px;
   margin-top: 198px;
-  height: 852px;
+  height: 1132px;
   width: 373px;
 }
 
@@ -418,14 +418,18 @@ section {
   justify-content: center;
   margin-top: 88px;
   width: 375px;
-  height: 779px;
+  height: 918px;
   background-image: url("./img/contact\ form\ shapes-mobile@2x.svg");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 60%;
   background-position: right;
   background-color: #6070ff;
   position: relative;
   align-items: center;
+  right: 32px;
+  border-top-left-radius: 98px;
+  text-align: center;
+  top: 32px;
 }
 
 .contact-title {
@@ -433,4 +437,73 @@ section {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  margin-top: 149px;
+}
+
+.contact-description {
+  width: 327px;
+  height: 137px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  position: relative;
+  bottom: 38px;
+}
+
+.contact-form {
+  position: relative;
+  top: 21px;
+}
+
+.form-items li {
+  margin-top: 22px;
+  position: relative;
+  right: 12px;
+  bottom: 54px;
+}
+
+.contact-form input {
+  height: 48px;
+  width: 327px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+.contact-form input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  padding: 12px;
+}
+
+.contact-form textarea {
+  width: 327px;
+  height: 170px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+.contact-form textarea::placeholder {
+  padding: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+.contact-form button {
+  display: flex;
+  padding: 12px 16px;
+  width: 153px;
+  height: 50px;
+  left: 24px;
+  top: 5317px;
+  background-color: #fff;
+  border-radius: 8px;
 }
