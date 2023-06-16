@@ -507,3 +507,52 @@ section {
   background-color: #fff;
   border-radius: 8px;
 }
+
+@media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    visibility: visible;
+    gap: 32px;
+    position: relative;
+    bottom: 15px;
+    right: 10.76%;
+  }
+
+  .nav-links a {
+    width: 46px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .navigation,
+  .bio-section,
+  .about-section,
+  .contact-me {
+    width: 100vw;
+  }
+
+  .bio-section {
+    height: 1440px;
+    position: relative;
+    top: -80px;
+    background-image: url(img/desk-bg.png);
+    background-size: 100% auto;
+    
+  }
+
+  .card {
+    width: 80.2vw;
+    position: relative;
+    left: 9.86%;
+  }
+}
