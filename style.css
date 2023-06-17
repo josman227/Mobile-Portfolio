@@ -419,10 +419,6 @@ section {
   margin-right: 12px;
 }
 
-.content {
-  margin-left: 24px;
-}
-
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -588,6 +584,9 @@ section {
     display: flex;
     flex-direction: column;
     gap: 88px;
+    justify-content: center;
+    position: relative;
+    left: 5rem;
   }
 
   .card {
@@ -668,12 +667,16 @@ section {
 
   .about-section {
     height: 58rem;
+    margin-top: -4rem;
+    position: relative;
   }
 
-  .about-section .content {
+  .about-section .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 21%;
+    position: relative;
+    left: 7rem;
   }
 
   .about-section .connect {
@@ -714,20 +717,22 @@ section {
   .about-2 .lang .lan {
     position: relative;
     left: -4rem;
-    height: 8rem;
+    height: 7rem;
     width: 7rem;
   }
 
   .about-2 .lang .lan h3,
   .about-2 .lang .lan p {
     position: relative;
-    left: -4.3rem;
-    top: 3.2rem;
+    left: -2.4rem;
+    top: 0.6rem;
     margin-top: 1rem;
   }
 
   .lan img {
-    height: 71%;
+    height: 38%;
+    position: relative;
+    top: -2rem;
   }
 
   .contact-me {
@@ -769,4 +774,10 @@ section {
     top: 0.6rem;
     left: 3rem;
   }
+
+  .logo {
+    position: relative;
+    left: 6rem;
+  }
+
 }
