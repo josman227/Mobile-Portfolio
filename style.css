@@ -14,6 +14,11 @@ body {
   background-color: #e5e5e5;
 }
 
+#menu {
+  position: relative;
+  left: 162px;
+}
+
 .navigation {
   background-color: #fff;
   width: 371px;
@@ -139,6 +144,12 @@ body {
   margin-top: 100px;
 }
 
+.card-items {
+  display: contents;
+  width: 311px;
+  position: relative;
+}
+
 .card {
   width: 311px;
   height: 552px;
@@ -205,7 +216,7 @@ body {
   text-decoration: none;
 }
 
-.card-props li:first-child a {
+.card-items .card-prop a {
   font-weight: 600;
   text-transform: uppercase;
   color: #2e4662;
@@ -539,20 +550,125 @@ section {
   .about-section,
   .contact-me {
     width: 100vw;
+    overflow-x: hidden;
   }
 
   .bio-section {
-    height: 1440px;
+    height: 100vh;
     position: relative;
     top: -80px;
     background-image: url(img/desk-bg.png);
     background-size: 100% auto;
-    
+  }
+
+  .bio-section .content {
+    padding: 10%;
+    width: 80vw;
+    position: relative;
+    top: 4%;
+  }
+
+  .bio-header {
+    width: 44vw;
+  }
+
+  .bio-text {
+    font-size: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
   }
 
   .card {
     width: 80.2vw;
+    height: 70%;
     position: relative;
     left: 9.86%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-img img {
+    height: 172%;
+    width: 102%;
+    position: relative;
+    top: -39%;
+    left: -5%;
+  }
+
+  .card-items {
+    width: 99%;
+    height: 81%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12%;
+    position: relative;
+    left: 4%;
+    top: -16%;
+  }
+
+  .card-props {
+    margin-right: 7%;
+  }
+
+  .oppo {
+    left: 88%;
+  }
+
+  #oppo,
+  #oppo2 {
+    position: relative;
+    left: 1%;
+    top: -15%;
+  }
+
+  .about-section .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 21%;
+  }
+
+  .about-2 {
+    position: relative;
+    top: 10%;
+    gap: 21%;
+  }
+
+  .lang {
+    flex-direction: row;
+    gap: 26%;
+  }
+
+  .lan {
+    width: 12%;
+  }
+
+  .lan img {
+    height: 71%;
+  }
+
+  .lan p,
+  .lefter-1,
+  .lefter-2 {
+    position: relative;
+    top: 57%;
+    right: 119%;
+    margin: 10%;
+  }
+
+  .contact-me {
+    background-image: url(img/desk-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    background-position: initial;
+  }
+
+  .contact-form button {
+    margin-left: 29%;
   }
 }
