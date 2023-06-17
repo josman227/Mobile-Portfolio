@@ -553,12 +553,20 @@ section {
     overflow-x: hidden;
   }
 
-  .bio-section {
-    height: 100vh;
+  .navigation {
+    z-index: 1;
+    height: 4.2rem;
+    width: 100vw;
     position: relative;
-    top: -80px;
+    top: -2rem;
+  }
+
+  .bio-section {
+    height: 112vh;
+    position: relative;
     background-image: url(img/desk-bg.png);
     background-size: 100% auto;
+    top: -7rem;
   }
 
   .bio-section .content {
@@ -583,7 +591,7 @@ section {
   }
 
   .card {
-    width: 80.2vw;
+    width: 65rem;
     height: 70%;
     position: relative;
     left: 9.86%;
@@ -592,38 +600,74 @@ section {
   }
 
   .card-img img {
-    height: 172%;
-    width: 102%;
+    height: 23rem;
+    width: 27rem;
     position: relative;
-    top: -39%;
-    left: -5%;
+    top: -5.1rem;
+    left: -1rem;
   }
 
   .card-items {
-    width: 99%;
+    width: 26rem;
     height: 81%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12%;
     position: relative;
-    left: 4%;
+    left: -6%;
     top: -16%;
   }
 
   .card-props {
-    margin-right: 7%;
+    width: 100%;
   }
 
-  .oppo {
-    left: 88%;
+  .card-text {
+    width: 113%;
   }
 
-  #oppo,
+  .card-languages {
+    position: relative;
+    left: -38%;
+    top: -40%;
+  }
+
+  .card-btn {
+    position: relative;
+    left: -40%;
+    top: -46%;
+  }
+
+  .card h2 {
+    position: relative;
+    top: 8%;
+    left: -22%;
+  }
+
+  #oppo {
+    left: -29.5rem;
+  }
+
   #oppo2 {
     position: relative;
-    left: 1%;
-    top: -15%;
+    left: 36rem;
+  }
+
+  .connect .connect-text {
+    margin-bottom: 2%;
+    margin-top: 1%;
+  }
+
+  .card-language p {
+    height: 0.01rem;
+    text-align: center;
+    position: relative;
+    top: -0.5rem;
+  }
+
+  .about-section {
+    height: 58rem;
   }
 
   .about-section .content {
@@ -632,43 +676,97 @@ section {
     margin-top: 21%;
   }
 
+  .about-section .connect {
+    width: 20rem;
+    position: relative;
+    top: -3rem;
+  }
+
+  .about-section .connect .connect-text {
+    margin-bottom: 1rem;
+  }
+
+  .about-section .resume-btn {
+    position: relative;
+    top: -2rem;
+    left: -0.2rem;
+  }
+
+  .about-text {
+    width: 28rem;
+  }
+
   .about-2 {
     position: relative;
-    top: 10%;
-    gap: 21%;
+    left: -7rem;
+    top: 3rem;
   }
 
-  .lang {
+  .about-2 .lang {
+    display: flex;
     flex-direction: row;
-    gap: 26%;
+    position: relative;
+    left: 2rem;
+    gap: 1rem;
+    width: 1rem;
   }
 
-  .lan {
-    width: 12%;
+  .about-2 .lang .lan {
+    position: relative;
+    left: -4rem;
+    height: 8rem;
+    width: 7rem;
+  }
+
+  .about-2 .lang .lan h3,
+  .about-2 .lang .lan p {
+    position: relative;
+    left: -4.3rem;
+    top: 3.2rem;
+    margin-top: 1rem;
   }
 
   .lan img {
     height: 71%;
   }
 
-  .lan p,
-  .lefter-1,
-  .lefter-2 {
-    position: relative;
-    top: 57%;
-    right: 119%;
-    margin: 10%;
-  }
-
   .contact-me {
-    background-image: url(img/desk-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: inherit;
-    background-position: initial;
+    background-image: url(img/desko-bg.png);
+    background-position-x: right;
+    background-size: 71rem;
   }
 
   .contact-form button {
     margin-left: 29%;
+  }
+
+  #seth,
+  #seth1 {
+    position: relative;
+    left: -7rem;
+  }
+
+  .separate {
+    width: 35rem;
+  }
+
+  .classy {
+    width: 12px;
+    height: 10px;
+  }
+
+  .contact-me .contact-description {
+    width: 33rem;
+  }
+
+  .contact-me form input,
+  .contact-me form textarea {
+    width: 30rem;
+  }
+
+  .contact-me form button {
+    position: relative;
+    top: 0.6rem;
+    left: 3rem;
   }
 }
