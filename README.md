@@ -93,7 +93,7 @@ This project was built using HTML and CSS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://josman227.github.io/portfolio.github.io/)
+- [Visit the Site here](https://josman227.github.io/portfolio.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
