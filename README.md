@@ -93,7 +93,7 @@ This project was built using HTML and CSS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://josman227.github.io/)
+- [Live Demo Link](https://josman227.github.io/portfolio.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +115,7 @@ Clone this repository to your desired folder:
 
 
   cd my-folder
-  git clone git@github.com:josman227/Mobile-Portfolio.git
+  git clone git@github.com:josman227/portfolio.git
 
 
 ### Install
@@ -133,7 +133,7 @@ npx hint .
 npx stylelint "**/*.{css,scss}"
 
 ### Deployment
-This project was Deployed with github pages https://josman227.github.io/
+This project was Deployed with github pages https://josman227.github.io/portfolio.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
