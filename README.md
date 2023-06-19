@@ -93,9 +93,7 @@ This project was built using HTML and CSS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-No Deployments yet
-
-- [Live Demo Link](https://github.com)
+- [Live Demo Link](https://josman227.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +133,7 @@ npx hint .
 npx stylelint "**/*.{css,scss}"
 
 ### Deployment
-No Deployments yet
+This project was Deployed with github pages https://josman227.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
