@@ -231,18 +231,26 @@ body {
 .card-languages {
   display: flex;
   position: relative;
-  right: 67px;
-  bottom: 103px;
+  right: 4rem;
+  bottom: 6rem;
   justify-content: space-between;
 }
 
 .card-language {
-  font-size: 12px;
+  font-size: 11px;
   background-color: #eaebfe;
-  padding: 4px 12px;
-  border-radius: 8px;
+  border-radius: 9px;
   color: #6070ff;
-  margin-left: 8px;
+  margin-left: 1rem;
+  width: max-content;
+  position: relative;
+  left: 2rem;
+  padding-left: 1rem;
+}
+
+.card-language p {
+  position: relative;
+  left: -0.5rem;
 }
 
 .card-btn {
@@ -269,7 +277,7 @@ body {
   border-top-right-radius: 98px;
   margin-top: 198px;
   height: 1132px;
-  width: 373px;
+  width: 100vw;
 }
 
 .about-heading {
