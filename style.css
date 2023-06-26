@@ -7,7 +7,7 @@
 }
 
 body {
-  padding: 24px;
+  padding: 1.3rem;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -16,16 +16,16 @@ body {
 
 #menu {
   position: relative;
-  left: 162px;
+  left: 6rem;
 }
 
 .navigation {
   background-color: #fff;
-  width: 371px;
-  height: 50px;
+  width: 100vw;
+  height: 4rem;
   position: relative;
-  left: -30px;
-  top: -33px;
+  left: -2rem;
+  top: -2rem;
 }
 
 .nav-links {
@@ -41,28 +41,26 @@ body {
   background-size: 100% auto;
   background-position: center;
   border-bottom-left-radius: 11%;
-  width: 373px;
-  height: 554px;
+  width: 100vw;
+  height: 37rem;
   position: relative;
-  left: -31px;
-  top: -49px;
+  top: -4.3rem;
+  left: -2rem;
 }
 
 .bio {
-  border: 2px transparent #fff;
   border-bottom-left-radius: 11%;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 1px;
+  margin-top: 1rem;
 }
 
 .logo {
-  width: 76px;
-  height: 20px;
+  width: 6rem;
+  height: 1rem;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -76,38 +74,41 @@ body {
   flex-grow: 0;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+  left: 1rem;
 }
 
 .bio-header {
-  font-size: 40px;
+  font-size: 2.6rem;
   font-weight: 700;
   line-height: 52px;
   text-align: left;
   letter-spacing: 0.37px;
   color: #172b4d;
-  width: 327px;
-  height: 150px;
-  margin-top: 82px;
+  width: 15rem;
+  height: 11rem;
+  margin-top: 5rem;
+  margin-left: 1rem;
 }
 
 .bio-text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
-  max-width: 80vw;
-  margin-top: -20px;
+  line-height: 1.5rem;
+  margin-top: -1rem;
   color: #344563;
+  margin-left: 1rem;
 }
 
 .connect {
   text-transform: uppercase;
   color: #6070ff;
+  margin-left: 1rem;
   font-size: 16px;
   font-weight: 300;
 }
 
 .connect-text {
-  margin-top: -11px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -115,20 +116,18 @@ body {
 }
 
 .connect-icons {
-  width: 200px;
+  width: 1rem;
   display: flex;
   justify-content: space-between;
-  align-content: flex-start;
-  margin-left: -58px;
-  margin-top: -5px;
+  margin-left: -3.4rem;
+  margin-top: 1rem;
 }
 
 .connect-icons i {
-  margin-left: 19px;
-  font-size: 21px;
+  margin-left: 1rem;
+  font-size: 1.3rem;
   color: #505f79;
-  height: 19.96px;
-  width: 19.99px;
+  width: 1.1rem;
 }
 
 .connect-icons i:hover {
@@ -139,9 +138,9 @@ body {
 
 .cards {
   display: grid;
-  gap: 88px;
+  gap: 10rem;
   background-color: #e5e5e5;
-  margin-top: 100px;
+  margin-top: 10rem;
 }
 
 .card-items {
@@ -151,26 +150,22 @@ body {
 }
 
 .card {
-  width: 311px;
-  height: 552px;
+  width: 16rem;
+  height: 34rem;
   border: 2px solid lightgray;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
-  gap: 12px;
+  padding: 2rem;
+  gap: 1.1rem;
   position: relative;
-  left: -15px;
   background-color: #fff;
 }
 
 .card-img {
-  width: 311px;
-  height: 220px;
+  height: 13rem;
   border-radius: 8px;
-  margin-top: 11px;
-  margin-left: 14px;
 }
 
 .connect-2 {
@@ -236,18 +231,26 @@ body {
 .card-languages {
   display: flex;
   position: relative;
-  right: 67px;
-  bottom: 103px;
+  right: 4rem;
+  bottom: 6rem;
   justify-content: space-between;
 }
 
 .card-language {
-  font-size: 12px;
+  font-size: 11px;
   background-color: #eaebfe;
-  padding: 4px 12px;
-  border-radius: 8px;
+  border-radius: 9px;
   color: #6070ff;
-  margin-left: 8px;
+  margin-left: 1rem;
+  width: max-content;
+  position: relative;
+  left: 2rem;
+  padding-left: 1rem;
+}
+
+.card-language p {
+  position: relative;
+  left: -0.5rem;
 }
 
 .card-btn {
@@ -274,7 +277,7 @@ body {
   border-top-right-radius: 98px;
   margin-top: 198px;
   height: 1132px;
-  width: 373px;
+  width: 100vw;
 }
 
 .about-heading {
@@ -407,7 +410,7 @@ button:disabled {
 
 section {
   background-color: #fff;
-  width: 327px;
+  overflow-x: hidden;
 }
 
 .about-me {
