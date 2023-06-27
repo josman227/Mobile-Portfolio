@@ -52,3 +52,27 @@ mobileLink.addEventListener('click', () => {
   cancelSelect.classList.add('hideit');
   menuSelect.classList.remove('hideit');
 });
+
+mobileLink2.addEventListener('click', () => {
+  navSelect.classList.remove('blur');
+  bioSelect.classList.remove('blur');
+  cardsSelect.classList.remove('blur');
+  aboutSelect.classList.remove('blur');
+  contactSelect.classList.remove('blur');
+  logoSelect.classList.remove('blur');
+  mobileMenu.classList.add('hideit');
+  cancelSelect.classList.add('hideit');
+  menuSelect.classList.remove('hideit');
+});
+
+mobileLink3.addEventListener('click', () => {
+  navSelect.classList.remove('blur');
+  bioSelect.classList.remove('blur');
+  cardsSelect.classList.remove('blur');
+  aboutSelect.classList.remove('blur');
+  contactSelect.classList.remove('blur');
+  logoSelect.classList.remove('blur');
+  mobileMenu.classList.add('hideit');
+  cancelSelect.classList.add('hideit');
+  menuSelect.classList.remove('hideit');
+});
