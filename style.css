@@ -537,6 +537,75 @@ section {
   opacity: 60%;
 }
 
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  width: 80vw;
+}
+
+/* Popup Close Button */
+.popup-close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Popup Content */
+.popup-content {
+  max-width: 70vw;
+}
+
+.pop-btn {
+  position: relative;
+  left: 14rem;
+  top: -10rem;
+  height: 36px;
+  width: 95px;
+  font-size: 1px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+.pop-btn p {
+  font-size: 12px;
+  position: relative;
+  top: -1rem;
+}
+
+.pop-text {
+  border: 1px solid red;
+  width: 75%;
+  position: relative;
+  top: 6rem;
+}
+
+.popup img {
+  width: 114%;
+  height: 1rem;
+  position: relative;
+  top: 6rem;
+}
+
+.popup h2 {
+  position: relative;
+}
+
+.popup .card-prop {
+  position: relative;
+}
+
 /* Javascript selector styles */
 
 .blur {
