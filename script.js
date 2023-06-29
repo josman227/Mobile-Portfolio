@@ -207,3 +207,15 @@ const openPopup = (card) => {
     blurry();
   });
 };
+
+// Clientside Validation
+const userMail = document.querySelector('#userEmail');
+
+userMail.addEventListener('input', (event) => {
+  const userInput = event.target.value.toLowerCase();
+  if (event.target.value !== userInput) {
+    userMail.setCustomValidity('Please enter your email address using lowercase letters.');
+  } else {
+    userMail.setCustomValidity('');
+  }
+});
