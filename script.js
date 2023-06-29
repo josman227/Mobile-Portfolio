@@ -186,6 +186,7 @@ const openPopup = (card) => {
   const popupContent = document.createElement('div');
   popupContent.classList.add('popup-content');
   popupContent.innerHTML = `
+    <div class ="popup-items"></div>
     <h2>${card.name}</h2>
      <ul class ="card-prop">${card.features}</ul>  
     <img src="${card.img}" alt="${card.alt}">
@@ -206,17 +207,3 @@ const openPopup = (card) => {
     blurry();
   });
 };
-
-// Clientside Validation
-const userMail = document.querySelector('#userEmail');
-
-userMail.addEventListener('input', (event) => {
-  const userInput = event.target.value.toLowerCase();
-  if (event.target.value !== userInput) {
-    userMail.setCustomValidity('Please enter your email address using lowercase letters.');
-  } else {
-    userMail.setCustomValidity('');
-  }
-});
-
-// Store Data in the Browser

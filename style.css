@@ -548,6 +548,7 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
   width: 80vw;
+  display: flex;
 }
 
 /* Popup Close Button */
@@ -565,6 +566,8 @@ section {
 /* Popup Content */
 .popup-content {
   max-width: 70vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .pop-btn {
