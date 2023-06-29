@@ -219,3 +219,29 @@ userMail.addEventListener('input', (event) => {
     userMail.setCustomValidity('');
   }
 });
+
+// Preserve User Data in Browser
+
+document.querySelectorAll('.usrInput').forEach((value) => {
+  value.addEventListener('input', () => {
+    let user = {
+      name: document.getElementById('userName').value,
+      email: document.getElementById('userEmail').value,
+      msg: document.getElementById('userMsg').value,
+    };
+    user = JSON.stringify(user);
+    localStorage.setItem('user', user);
+  });
+});
+
+// Preserve data in Browser
+
+window.addEventListener('load', () => {
+  const userValue = localStorage.getItem('user');
+  if (userValue) {
+    const userObject = JSON.parse(userValue);
+    document.getElementById('userName').value = userObject.name || '';
+    document.getElementById('userEmail').value = userObject.email || '';
+    document.getElementById('userMsg').value = userObject.msg || '';
+  }
+});
