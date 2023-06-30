@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 * {
@@ -539,35 +540,40 @@ section {
 
 .popup {
   position: fixed;
-  top: 50%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   padding: 22px;
-  border-radius: 8px;
+  border-radius: 16px;
+  border: 1px solid lightgray;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
-  width: 80vw;
+  width: 16rem;
+  height: 31.4rem;
   display: flex;
 }
 
 /* Popup Close Button */
 .popup-close {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: -0.5rem;
+  right: 14px;
   border: none;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
   color: #333;
 }
 
 /* Popup Content */
 .popup-content {
-  max-width: 70vw;
+  max-width: 67vw;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: -1.9rem;
 }
 
 .pop-btn {
@@ -588,17 +594,20 @@ section {
 }
 
 .pop-text {
-  border: 1px solid red;
-  width: 75%;
+  width: 17rem;
   position: relative;
-  top: 6rem;
+  top: -1rem;
+  height: 9rem;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .popup img {
-  width: 114%;
-  height: 1rem;
+  width: 16rem;
+  height: 11rem;
   position: relative;
-  top: 6rem;
+  top: -1rem;
+  border-radius: 0.5rem;
 }
 
 .popup h2 {
@@ -607,6 +616,53 @@ section {
 
 .popup .card-prop {
   position: relative;
+  left: -2.5rem;
+  top: -1rem;
+}
+
+.about-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 22rem;
+}
+
+.about-btn-container button {
+  position: relative;
+  height: 2rem;
+  width: 7rem;
+  top: -24rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-btn-container button a {
+  position: relative;
+  font-size: 13px;
+  top: -0.5rem;
+  color: #0034cd;
+}
+
+.about-btn-container button img {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  top: 0.17rem;
+}
+
+.about-btn-container button img.button-icon.kiti {
+  position: relative;
+  top: -1.1rem;
+  left: 4.7rem;
+}
+
+.card-languages.pop .card-language {
+  position: relative;
+  left: 0.5rem;
+  top: 3.4rem;
+  height: 2rem;
 }
 
 /* Javascript selector styles */

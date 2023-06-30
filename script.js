@@ -67,7 +67,7 @@ const showCard = () => {
       name: 'Multi-Post Stories',
       features: ['FACEBOOK', 'Full Stack Dev', '2015'],
       description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      languages: ['HTML', 'JavaScript'],
+      languages: ['HTML', 'JavaScript', 'Ruby on Rails', 'css'],
       id: 'card2-btn',
       cardIndex: 1, // Add card index property
     },
@@ -77,7 +77,7 @@ const showCard = () => {
       name: 'Multi-Post Stories',
       features: ['FACEBOOK', 'Full Stack Dev', '2015'],
       description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      languages: ['HTML', 'JavaScript'],
+      languages: ['HTML', 'css', 'Ruby on Rails', 'JavaScript'],
       id: 'card2-btn',
       cardIndex: 2, // Add card index property
     },
@@ -87,7 +87,7 @@ const showCard = () => {
       name: 'Multi-Post Stories',
       features: ['FACEBOOK', 'Full Stack Dev', '2015'],
       description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      languages: ['HTML', 'JavaScript'],
+      languages: ['HTML', 'css', 'Ruby on Rails', 'JavaScript'],
       id: 'card2-btn',
       cardIndex: 3, // Add card index property
     },
@@ -154,7 +154,7 @@ showCard();
 const openPopup = (card) => {
   const popup = document.createElement('div');
   popup.classList.add('popup');
-  const closeButton = document.createElement('button');
+  const closeButton = document.createElement('p');
   closeButton.classList.add('popup-close');
   closeButton.textContent = 'X';
   const popupContent = document.createElement('div');
@@ -164,10 +164,27 @@ const openPopup = (card) => {
     <h2>${card.name}</h2>
      <ul class ="card-prop">${card.features}</ul>
     <img src="${card.img}" alt="${card.alt}">
-    <p class ="pop-text">${card.description} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text <br><br> ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
-    <ul class = "card-language">${card.languages}</ul>
-    <button class = "pop-btn"><p>See live</p></button>
-    <button class = "pop-btn"><p>See Source</p></button>
+    <p class ="pop-text">${card.description} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+    <ul class = "card-languages pop">
+        <li class = "card-language"><p>HTML</p></li>
+        <li class = "card-language"><p>CSS</p></li>
+        <li class = "card-language"><p>Javascript</p></li>
+    </ul>
+    <div class="about-btn-container">
+    <button>
+        <a href="https://josman227.github.io/portfolio.github.io/" target="_blank" class="popup-button">
+           See live
+       <img src="img/livee.svg" alt="Circle Arrow" class="button-icon">
+        </a>
+    </button>
+
+    <button>
+      <a href="https://github.com/josman227/portfolio.github.io" target="_blank" class="popup-button">
+        See source
+          <img src="img/giti.svg" alt="Github Icon" class="button-icon kiti">
+           </a>
+      </button>
+      </div>
   `;
   popup.appendChild(closeButton);
   popup.appendChild(popupContent);
