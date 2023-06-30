@@ -565,6 +565,7 @@ section {
   font-weight: 500;
   cursor: pointer;
   color: #333;
+  z-index: 9999;
 }
 
 /* Popup Content */
@@ -736,14 +737,14 @@ section {
   #bio-section,
   #about-section,
   #contact-me {
-    width: 119%;
+    width: 100%;
     overflow-x: hidden;
   }
 
   .navigation {
     z-index: 1;
     height: 4.2rem;
-    width: 119%;
+    width: 100%;
     position: relative;
     top: -2rem;
   }
@@ -778,10 +779,12 @@ section {
     justify-content: center;
     position: relative;
     left: 5rem;
+    width: 80vw;
+    overflow-y: hidden;
   }
 
   .card {
-    width: 65rem;
+    width: 80%;
     height: 70%;
     position: relative;
     left: 9.86%;
@@ -798,7 +801,7 @@ section {
   }
 
   .card-items {
-    width: 26rem;
+    width: 80%;
     height: 81%;
     display: flex;
     flex-direction: column;
@@ -811,28 +814,30 @@ section {
 
   .card-props {
     width: 100%;
+    position: relative;
+    left: 0%;
   }
 
   .card-text {
-    width: 113%;
+    width: 98%;
   }
 
   .card-languages {
     position: relative;
-    left: -38%;
-    top: -40%;
+    left: -21%;
+    top: -33%;
   }
 
   .card-btn {
     position: relative;
-    left: -40%;
-    top: -46%;
+    left: -27%;
+    top: -39%;
   }
 
   .card h2 {
     position: relative;
     top: 8%;
-    left: -22%;
+    left: -2%;
   }
 
   #oppo {
@@ -970,5 +975,132 @@ section {
     position: relative;
     left: 6rem;
     visibility: hidden;
+  }
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    width: 90vw;
+    height: 90%;
+  }
+
+  /* Popup Close Button */
+  .popup-close {
+    position: relative;
+    top: -1rem;
+    right: -73rem;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .popup-content {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -0.9rem;
+  }
+
+  .pop-btn {
+    position: relative;
+    left: 14rem;
+    top: -10rem;
+    height: 36px;
+    width: 95px;
+    font-size: 1px;
+    border-radius: 11px;
+    text-align: center;
+  }
+
+  .pop-btn p {
+    font-size: 12px;
+    position: relative;
+    top: -1rem;
+  }
+
+  .pop-text {
+    width: 75%;
+    position: relative;
+    top: -1rem;
+    height: 9rem;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .popup img {
+    max-height: 500px;
+    width: 86vw;
+    height: 46vh;
+    position: relative;
+  }
+
+  .popup h2 {
+    position: relative;
+    font-size: 1.4rem;
+  }
+
+  .popup .card-prop {
+    position: relative;
+    left: -2.5rem;
+    top: -1rem;
+    font-size: 1rem;
+  }
+
+  .about-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 54%;
+    width: 24%;
+    left: 91%;
+  }
+
+  .about-btn-container button {
+    position: relative;
+    height: 2rem;
+    width: 7rem;
+    top: -24rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about-btn-container button a {
+    position: relative;
+    font-size: 13px;
+    top: -0.5rem;
+    color: #0034cd;
+  }
+
+  .about-btn-container button img {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    top: 0.17rem;
+  }
+
+  .about-btn-container button img.button-icon.kiti {
+    position: relative;
+    top: -1.1rem;
+    left: 4.7rem;
+  }
+
+  .card-languages.pop .card-language {
+    position: relative;
+    left: 0.5rem;
+    top: 3.4rem;
+    height: 2rem;
   }
 }
