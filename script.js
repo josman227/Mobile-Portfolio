@@ -162,8 +162,15 @@ const openPopup = (card) => {
   popupContent.innerHTML = `
     <div class ="popup-items"></div>
     <h2>${card.name}</h2>
-     <ul class ="card-prop">${card.features}</ul>
-    <img src="${card.img}" alt="${card.alt}">
+  <ul class="card-props">
+    <li  class="card-prop">Canopy</li>
+    <li class="card-prop"><img src="img/Counter.png" class ="rvw"></li>
+    <li class="card-prop">Back End Dev</li>
+    <li class="card-prop"><img src="img/Counter.png" class ="rvw"></li>
+    <li  class="card-prop">2015</li>
+</ul>
+<div class ="pop-pic"><img src="${card.img}" alt="${card.alt}" class = "zhozya"></div>
+    
     <p class ="pop-text">${card.description} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
     <ul class = "card-languages pop">
         <li class = "card-language"><p>HTML</p></li>
@@ -178,7 +185,7 @@ const openPopup = (card) => {
         </a>
     </button>
 
-    <button>
+    <button class ="buron">
       <a href="https://github.com/josman227/portfolio.github.io" target="_blank" class="popup-button">
         See source
           <img src="img/giti.svg" alt="Github Icon" class="button-icon kiti">

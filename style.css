@@ -540,7 +540,7 @@ section {
 
 .popup {
   position: fixed;
-  top: 49%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
@@ -549,8 +549,8 @@ section {
   border: 1px solid lightgray;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
-  width: 16rem;
-  height: 31.4rem;
+  width: 78%;
+  height: 83.4%;
   display: flex;
 }
 
@@ -595,17 +595,17 @@ section {
 }
 
 .pop-text {
-  width: 17rem;
+  width: 121%;
   position: relative;
-  top: -1rem;
-  height: 9rem;
-  font-size: 14px;
+  top: -9%;
+  height: 8%;
+  font-size: 13px;
   font-weight: 400;
 }
 
 .popup img {
-  width: 16rem;
-  height: 11rem;
+  width: 112%;
+  height: 88%;
   position: relative;
   top: -1rem;
   border-radius: 0.5rem;
@@ -617,8 +617,8 @@ section {
 
 .popup .card-prop {
   position: relative;
-  left: -2.5rem;
-  top: -1rem;
+  left: 5%;
+  top: 13%;
 }
 
 .about-btn-container {
@@ -631,18 +631,31 @@ section {
 
 .about-btn-container button {
   position: relative;
-  height: 2rem;
-  width: 7rem;
-  top: -24rem;
+  height: 3rem;
+  width: 8rem;
+  top: -23rem;
+  left: -1%;
+  margin-left: 11px;
   border-radius: 0.5rem;
   display: flex;
   justify-content: space-around;
 }
 
+.about-btn-container button.buron {
+  position: relative;
+  width: 10rem;
+  left: 1rem;
+}
+
+.about-btn-container button.buron2 {
+  position: relative;
+  width: 10rem;
+  left: 1rem;
+}
+
 .about-btn-container button a {
   position: relative;
-  font-size: 13px;
-  top: -0.5rem;
+  font-size: 18px;
   color: #0034cd;
 }
 
@@ -655,15 +668,23 @@ section {
 
 .about-btn-container button img.button-icon.kiti {
   position: relative;
-  top: -1.1rem;
-  left: 4.7rem;
+  top: -1.5rem;
+  left: 6.1rem;
 }
 
 .card-languages.pop .card-language {
   position: relative;
-  left: 0.5rem;
-  top: 3.4rem;
+  left: 5%;
+  top: 248.4%;
   height: 2rem;
+}
+
+.card-languages.pop {
+  position: relative;
+  display: flex;
+  left: -4.2em;
+  top: -5.5em;
+  align-items: center;
 }
 
 /* Javascript selector styles */
@@ -702,6 +723,13 @@ section {
   left: 4rem;
   top: 5rem;
   color: white;
+}
+
+.card-prop .rvw {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  top: 1%;
 }
 
 /* End of Javascript Selector styles */
@@ -987,8 +1015,8 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 9999;
-    width: 90vw;
-    height: 90%;
+    width: 85%;
+    height: 85%;
   }
 
   /* Popup Close Button */
@@ -1032,7 +1060,7 @@ section {
   .pop-text {
     width: 75%;
     position: relative;
-    top: -1rem;
+    top: 8%;
     height: 9rem;
     font-size: 14px;
     font-weight: 400;
@@ -1052,8 +1080,8 @@ section {
 
   .popup .card-prop {
     position: relative;
-    left: -2.5rem;
-    top: -1rem;
+    left: -1%;
+    top: 12%;
     font-size: 1rem;
   }
 
@@ -1062,9 +1090,9 @@ section {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 54%;
-    width: 24%;
-    left: 91%;
+    top: 62%;
+    width: 21%;
+    left: 84%;
   }
 
   .about-btn-container button {
@@ -1078,6 +1106,12 @@ section {
     justify-content: space-around;
     margin-right: -25%;
     font-size: -5rem;
+  }
+
+  .about-btn-container button.buron {
+    position: relative;
+    width: 70%;
+    left: 1%;
   }
 
   .about-btn-container button a {
@@ -1096,9 +1130,9 @@ section {
   }
 
   .about-btn-container button img.button-icon.kiti {
-    position: relative;
-    top: -1.2rem;
-    left: 5.21rem;
+    position: sticky;
+    top: -7%;
+    left: 5.1%;
   }
 
   .card-languages.pop .card-language {
@@ -1111,7 +1145,27 @@ section {
   .card-languages.pop {
     position: relative;
     width: 15%;
-    left: 84%;
-    top: -30%;
+    left: 79%;
+    top: -22%;
+  }
+
+  .card-prop .rvw {
+    position: relative;
+    width: 8px;
+    height: 9px;
+    top: 1%;
+  }
+
+  img.zhozya {
+    position: relative;
+  }
+
+  div.pop-pic {
+    position: relative;
+    max-width: 112%;
+    height: 102%;
+    left: 5%;
+    overflow: hidden;
+    outline: 41px solid lightgray;
   }
 }
