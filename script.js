@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 // Mobile menu
 const menuSelect = document.querySelector('.menu');
 const logoSelect = document.querySelector('.logo');
@@ -10,9 +9,7 @@ const aboutSelect = document.getElementById('about-section');
 const contactSelect = document.getElementById('contact-me');
 const mobileMenu = document.querySelector('.mobile-links');
 const mobileLinks = document.querySelectorAll('.mobile-link');
-
 mobileMenu.classList.add('hideit');
-
 function blurry() {
   navSelect.classList.toggle('blur');
   bioSelect.classList.toggle('blur');
@@ -21,14 +18,12 @@ function blurry() {
   contactSelect.classList.toggle('blur');
   logoSelect.classList.toggle('blur');
 }
-
 menuSelect.addEventListener('click', () => {
   menuSelect.classList.add('hideit');
   cancelSelect.style.display = 'block';
   mobileMenu.classList.remove('hideit');
   blurry();
 });
-
 cancelSelect.addEventListener('click', () => {
   menuSelect.classList.remove('hideit');
   cancelSelect.style.display = 'none';
@@ -39,7 +34,6 @@ cancelSelect.addEventListener('click', () => {
   aboutSelect.classList.remove('blur');
   contactSelect.classList.remove('blur');
 });
-
 mobileLinks.forEach((link) => {
   link.addEventListener('click', () => {
     navSelect.classList.remove('blur');
@@ -53,10 +47,8 @@ mobileLinks.forEach((link) => {
     menuSelect.classList.remove('hideit');
   });
 });
-
 const showCard = () => {
   const cardContainer = document.querySelector('#cards');
-
   // Array of card data objects
   const cards = [
     {
@@ -75,7 +67,7 @@ const showCard = () => {
       name: 'Multi-Post Stories',
       features: ['FACEBOOK', 'Full Stack Dev', '2015'],
       description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      languages: ['HTML', 'JavaScript'],
+      languages: ['HTML', 'JavaScript', 'Ruby on Rails', 'css'],
       id: 'card2-btn',
       cardIndex: 1, // Add card index property
     },
@@ -85,7 +77,7 @@ const showCard = () => {
       name: 'Multi-Post Stories',
       features: ['FACEBOOK', 'Full Stack Dev', '2015'],
       description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      languages: ['HTML', 'JavaScript'],
+      languages: ['HTML', 'css', 'Ruby on Rails', 'JavaScript'],
       id: 'card2-btn',
       cardIndex: 2, // Add card index property
     },
@@ -95,18 +87,16 @@ const showCard = () => {
       name: 'Multi-Post Stories',
       features: ['FACEBOOK', 'Full Stack Dev', '2015'],
       description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      languages: ['HTML', 'JavaScript'],
+      languages: ['HTML', 'css', 'Ruby on Rails', 'JavaScript'],
       id: 'card2-btn',
       cardIndex: 3, // Add card index property
     },
     // Add more card objects as needed
   ];
-
   // eslint-disable-next-line no-unused-vars
   cards.forEach((card, index) => {
     const article = document.createElement('article');
     article.classList.add('card');
-
     const cardImg = document.createElement('div');
     cardImg.classList.add('card-img');
     const img = document.createElement('img');
@@ -114,34 +104,26 @@ const showCard = () => {
     img.alt = card.alt;
     cardImg.appendChild(img);
     article.appendChild(cardImg);
-
     const cardItems = document.createElement('div');
     cardItems.classList.add('card-items');
-
     const cardTitle = document.createElement('h2');
     cardTitle.textContent = card.name;
     cardItems.appendChild(cardTitle);
-
     const cardProps = document.createElement('ul');
     cardProps.classList.add('card-props');
-
     card.features.forEach((feature) => {
       const cardProp = document.createElement('li');
       cardProp.classList.add('card-prop');
       cardProp.textContent = feature;
       cardProps.appendChild(cardProp);
     });
-
     cardItems.appendChild(cardProps);
-
     const cardText = document.createElement('p');
     cardText.classList.add('card-text');
     cardText.textContent = card.description;
     cardItems.appendChild(cardText);
-
     const cardLanguages = document.createElement('ul');
     cardLanguages.classList.add('card-languages');
-
     card.languages.forEach((language) => {
       const cardLanguage = document.createElement('li');
       cardLanguage.classList.add('card-language');
@@ -150,18 +132,14 @@ const showCard = () => {
       cardLanguage.appendChild(p);
       cardLanguages.appendChild(cardLanguage);
     });
-
     cardItems.appendChild(cardLanguages);
-
     const cardButton = document.createElement('button');
     cardButton.classList.add('card-btn');
     cardButton.id = card.id;
     cardButton.textContent = 'See Project';
     cardItems.appendChild(cardButton);
-
     article.appendChild(cardItems);
     cardContainer.appendChild(article);
-
     // Event listener for card button click
     cardButton.addEventListener('click', () => {
       // eslint-disable-next-line no-use-before-define
@@ -171,46 +149,61 @@ const showCard = () => {
     });
   });
 };
-
 showCard();
-
 // Function to open popup window
 const openPopup = (card) => {
   const popup = document.createElement('div');
   popup.classList.add('popup');
-
-  const closeButton = document.createElement('button');
+  const closeButton = document.createElement('p');
   closeButton.classList.add('popup-close');
   closeButton.textContent = 'X';
-
   const popupContent = document.createElement('div');
   popupContent.classList.add('popup-content');
   popupContent.innerHTML = `
     <div class ="popup-items"></div>
     <h2>${card.name}</h2>
-     <ul class ="card-prop">${card.features}</ul>  
-    <img src="${card.img}" alt="${card.alt}">
-    <p class ="pop-text">${card.description} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text <br><br> ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
-    <ul class = "card-language">${card.languages}</ul>
-    <button class = "pop-btn"><p>See live</p></button>
-    <button class = "pop-btn"><p>See Source</p></button>
+  <ul class="card-props">
+    <li  class="card-prop">Canopy</li>
+    <li class="card-prop"><img src="img/Counter.png" class ="rvw"></li>
+    <li class="card-prop">Back End Dev</li>
+    <li class="card-prop"><img src="img/Counter.png" class ="rvw"></li>
+    <li  class="card-prop">2015</li>
+</ul>
+<div class ="pop-pic"><img src="${card.img}" alt="${card.alt}" class = "zhozya"></div>
+    
+    <p class ="pop-text">${card.description} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+    <ul class = "card-languages pop">
+        <li class = "card-language"><p>HTML</p></li>
+        <li class = "card-language"><p>CSS</p></li>
+        <li class = "card-language"><p>Javascript</p></li>
+    </ul>
+    <div class="about-btn-container">
+    <button>
+        <a href="https://josman227.github.io/portfolio.github.io/" target="_blank" class="popup-button">
+           See live
+       <img src="img/livee.svg" alt="Circle Arrow" class="button-icon">
+        </a>
+    </button>
 
+    <button class ="buron">
+      <a href="https://github.com/josman227/portfolio.github.io" target="_blank" class="popup-button">
+        See source
+          <img src="img/giti.svg" alt="Github Icon" class="button-icon kiti">
+           </a>
+      </button>
+      </div>
   `;
-
   popup.appendChild(closeButton);
   popup.appendChild(popupContent);
   document.body.appendChild(popup);
-
   // Event listener for close button click
   closeButton.addEventListener('click', () => {
     document.body.removeChild(popup);
     blurry();
   });
 };
-
 // Clientside Validation
 const userMail = document.querySelector('#userEmail');
-
 userMail.addEventListener('input', (event) => {
   const userInput = event.target.value.toLowerCase();
   if (event.target.value !== userInput) {
@@ -219,9 +212,7 @@ userMail.addEventListener('input', (event) => {
     userMail.setCustomValidity('');
   }
 });
-
 // Preserve User Data in Browser
-
 document.querySelectorAll('.usrInput').forEach((value) => {
   value.addEventListener('input', () => {
     let user = {
@@ -233,9 +224,7 @@ document.querySelectorAll('.usrInput').forEach((value) => {
     localStorage.setItem('user', user);
   });
 });
-
 // Preserve data in Browser
-
 window.addEventListener('load', () => {
   const userValue = localStorage.getItem('user');
   if (userValue) {
